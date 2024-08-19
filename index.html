@@ -7,7 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body class="bg-base-100">
     
  <!-- Navabar Created -->
     
@@ -18,27 +18,11 @@
             <a class="btn btn-ghost text-xl text-white">Buy / Sells Corner</a>
         </div>
         <div class="flex-none gap-2">
-
-            <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-          <div class="w-10 rounded-full">
-              <img
-              alt="Tailwind CSS Navbar component"
-              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-            </div>
-        </div>
-        <ul
-        tabindex="0"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li>
-            <a class="justify-between">
-                Profile
-                <span class="badge">New</span>
-            </a>
-        </li>
-        <li><a>Logout</a></li>
-    </ul>
-</div>
+                <div role="button" class="btn btn-ghost btn-circle ">
+            <div id="loginDiv">
+              <div id="login" class="nav-content d-flex ">
+                  <button id="logoutBtn" class="btn btn-dark p-[10px]">Logout</button>
+              </div>
 </div>
 </div>
 </nav>
@@ -62,55 +46,7 @@
     <div class="cards-section flex flex-wrap justify-center gap-[50px] mt-[20px]" id="div" >
 
       <!--  Card  started-->
-        <div class="card bg-base-100 w-full xs:w-full sm:w-[450px] md:w-[450px] lg:w-[450px] shadow-xl">
-            <figure>
-            <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes" />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div class="card-actions flex justify-between items-center mt-[10px]">
-            <h1 class="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl font-light xs:font-light sm:font-medium md:font-normal lg:font-semibold">RS 10,000</h1>
-            <button class="bg-blue-700 p-[5px]  md:p-[5px] lg:p-[7px] rounded-lg text-sm xs:text-md sm:text-md md:text-lg lg:text-xl text-white shadow-[1px_1px_2px_gray] hover:shadow-[1px_1px_2px_black]">Buy Now</button>
-          </div>
-        </div>
-      </div>
-    
-       <div class="card bg-base-100 w-full xs:w-full sm:w-[450px] md:w-[450px] lg:w-[450px] shadow-xl">
-        <figure>
-          <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes" />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div class="card-actions flex justify-between items-center mt-[10px]">
-            <h1 class="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl font-light xs:font-light sm:font-medium md:font-normal lg:font-semibold">RS 10,000</h1>
-            <button class="bg-blue-700 p-[5px]  md:p-[5px] lg:p-[7px] rounded-lg text-sm xs:text-md sm:text-md md:text-lg lg:text-xl text-white shadow-[1px_1px_2px_gray] hover:shadow-[1px_1px_2px_black]">Buy Now</button>
-          </div>
-        </div>
-      </div> 
-    
-     <div class="card bg-base-100 w-full xs:w-full sm:w-[450px] md:w-[450px] lg:w-[450px] shadow-xl">
-      <figure>
-        <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div class="card-actions flex justify-between items-center mt-[10px]">
-          <h1 class="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl font-light xs:font-light sm:font-medium md:font-normal lg:font-semibold">RS 10,000</h1>
-          <button class="bg-blue-700 p-[5px]  md:p-[5px] lg:p-[7px] rounded-lg text-sm xs:text-md sm:text-md md:text-lg lg:text-xl text-white shadow-[1px_1px_2px_gray] hover:shadow-[1px_1px_2px_black]">Buy Now</button>
-        </div>
-      </div>
-    </div>
-  </div>
- </div>
+        <div class="card cards-section  w-full xs:w-full sm:w-[450px] md:w-[450px] lg:w-[450px] shadow-xl">
 </div>
 <!-- card ended -->
 
