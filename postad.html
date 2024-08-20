@@ -6,6 +6,8 @@
     <title>POST AD</title>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="./Assests/style.css">
 </head>
 <body>
     
@@ -17,71 +19,58 @@
                 <a class="btn btn-ghost text-xl text-white">Buy / Sells Corner</a>
             </div>
             <div class="flex-none gap-2">
-    
-                <div class="dropdown dropdown-end">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-              <div class="w-10 rounded-full">
-                  <img
-                  alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                </div>
-            </div>
-            <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li>
-                <a class="justify-between">
-                    Profile
-                    <span class="badge">New</span>
-                </a>
-            </li>
-            <li><a>Logout</a></li>
-        </ul>
-    </div>
+                    <div role="button" class="btn btn-ghost btn-circle ">
+                      <div id="loginDiv" >
+                        <div id="login" class="nav-content  gap-2">
+                            <button id="logoutBtn" class="btn btn-dark">Logout</button>
+                            <img id="userIcon" class="rounded-full"
+                                src="./Assests/Images/black.jfif"
+                                alt="userIamge">
+                        </div> 
     </div>
     </div>
     </nav>
-    
     <!-- Nabvar Ended -->
 
-<div class="">
-
-    <div class="bg-primary item-center form-control max-w-xs  rounded-md content-center">
-        
-        <i class="fa-regular fa-square-plus w-24 content-center"></i>
-        <br>
-        <p class="text-white text-center mt-5 text-3xl font-bold my-10 content-center">Add A New Product</p>
-        
-        <br>
+<div class="mt-5 text-center">
+ <form  id="form">
+<h2 class="fw-bold">POST AD</h2>
+<div class="container my-4">
+    <div class="img-cont">
+        <div class="ms-5">
+            <img src="./Assests/Images/square-plus-regular.svg" alt="img" class=" uploadimg text-center">
+        </div>
     </div>
-    <br>
-
-    <input type="text" placeholder="product Title" class=" rounded-md bg-white w-[20rem] border-slate-500 my-2"> 
-
-    <br>
-
-    <input type="text" placeholder="Product Description" class=" rounded-md bg-white w-[20rem] border-slate-500 my-2"> 
-
-    <br>
-
-    <input type="text" placeholder="Enter Price " class=" rounded-md bg-white w-[20rem] border-slate-500 my-2"> 
-
-    <br>
-
-    <input type="text" placeholder="Enter Your Name" class=" rounded-md bg-white w-[20rem] border-slate-500 my-2"> 
-
-    <br>
-
-    <input type="text" placeholder="Enter Your Number" class=" rounded-md bg-white w-[20rem] border-slate-500 my-2">
-    
-    <br>
-
-    <button class=" btn btn-primary text-white">POST NOW</button>
-    
 </div>
-
-
-<script src="./postad.js" type="module"></script>
+        <br>
+        
+        <input type="text" placeholder="product Title" class=" rounded-md bg-white w-[20rem] border-slate-500 my-2" id="ProductTitle"> 
+        
+        <br>
+        
+        <input type="text" placeholder="Product Description" class=" rounded-md bg-white w-[20rem] border-slate-500 my-2" id="ProductDesciption"> 
+        
+        <br>
+        
+        <input type="text" placeholder="Enter Price " class=" rounded-md bg-white w-[20rem] border-slate-500 my-2" id="ProductPrice"> 
+        
+        <br>
+        
+        <input type="text" placeholder="Enter Your Name" class=" rounded-md bg-white w-[20rem] border-slate-500 my-2" id="userName"> 
+        
+        <br>
+        
+        <input type="text" placeholder="Enter Your Number" class=" rounded-md bg-white w-[20rem] border-slate-500 my-2" id="userNum">
+        
+        <br>
+        
+        <button class=" btn btn-primary text-white" id="Postbtn" >POST NOW</button>
+        
+    </form>
+    </div>
+    
+    
+    <script src="./postad.js" type="module"></script>
     <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
 </body>

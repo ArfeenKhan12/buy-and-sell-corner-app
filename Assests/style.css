@@ -1,0 +1,12 @@
+.uploadimg{
+    width: 140px;
+    align-items: center;
+}
+.imgcont {
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}

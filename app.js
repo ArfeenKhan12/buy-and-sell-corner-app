@@ -2,14 +2,14 @@ import { onAuthStateChanged, signOut, } from "https://www.gstatic.com/firebasejs
 import { collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 import { auth, db } from "./config.js";
 
-// use html element in javascript
+
 const logoutBtn = document.querySelector('#logoutBtn')
 const userIcon = document.querySelector('#userIcon')
 const loginDiv = document.querySelector('#loginDiv')
 const cardsSection = document.querySelector('.cards-section')
 
 
-// check user status user login or not
+
 onAuthStateChanged(auth, async (user) => {
     if (user) {
         const uid = user.uid;
@@ -31,7 +31,7 @@ userIcon.addEventListener('click', () => {
             }
         );
 
-// logout function
+
 logoutBtn.addEventListener('click', () => {
     signOut(auth).then(() => {
         Swal.fire({
@@ -46,7 +46,7 @@ logoutBtn.addEventListener('click', () => {
                 }
             });
     }).catch((error) => {
-        // An error happened.
+        console.log(error);
     });
 })
 
